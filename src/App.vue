@@ -4,8 +4,10 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header></header>
-
-  <RouterView />
+  <main>
+    <RouterView />
+  </main>
+  <footer></footer>
 </template>
 
 <style></style>

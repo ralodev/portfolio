@@ -11,6 +11,9 @@ dependencies:
   vue:
     specifier: ^3.4.21
     version: 3.4.23(typescript@5.4.5)
+  vue-i18n:
+    specifier: '9'
+    version: 9.13.0(vue@3.4.23)
   vue-router:
     specifier: ^4.3.0
     version: 4.3.1(vue@3.4.23)
@@ -690,6 +693,27 @@ packages:
   /@humanwhocodes/object-schema@2.0.3:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     dev: true
+
+  /@intlify/core-base@9.13.0:
+    resolution: {integrity: sha512-Lx8+YTrFpom7AtdbbuJHzgmr612/bceHU92v8ZPU9HU9/rczf+TmCs95BxWPIR4K42xh4MVMLsNzLUWiXcNaLg==}
+    engines: {node: '>= 16'}
+    dependencies:
+      '@intlify/message-compiler': 9.13.0
+      '@intlify/shared': 9.13.0
+    dev: false
+
+  /@intlify/message-compiler@9.13.0:
+    resolution: {integrity: sha512-zhESuudiDpFQhUOx/qrSMd7ZYHbmgCc0QzBc27cDUxaaAj3olbYJnsx3osiHPQyYnv/LuC+WTqoNOEBoHP6dqQ==}
+    engines: {node: '>= 16'}
+    dependencies:
+      '@intlify/shared': 9.13.0
+      source-map-js: 1.2.0
+    dev: false
+
+  /@intlify/shared@9.13.0:
+    resolution: {integrity: sha512-fUwWcpDz9Wm4dSaz+6XmjoNXWBjZLJtT1Zf1cpLBELbCAOS8WBRscPtgOSfzm6JCqf5KgMI4g917f5TtEeez3A==}
+    engines: {node: '>= 16'}
+    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -3173,6 +3197,18 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /vue-i18n@9.13.0(vue@3.4.23):
+    resolution: {integrity: sha512-NlZ+e8rhGSGNk/Vfh4IUvlPRjljPCRslbNYgQmYZY+sLXZgahw8fylQguZU3e8ntJDvitfe40f8p3udOiKMS0A==}
+    engines: {node: '>= 16'}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      '@intlify/core-base': 9.13.0
+      '@intlify/shared': 9.13.0
+      '@vue/devtools-api': 6.6.1
+      vue: 3.4.23(typescript@5.4.5)
+    dev: false
 
   /vue-router@4.3.1(vue@3.4.23):
     resolution: {integrity: sha512-D0h3oyP6vp28BOvxv2hVpiqFTjTJizCf1BuMmCibc8UW0Ll/N80SWqDd/hqPMaZfzW1j+s2s+aTRyBIP9ElzOw==}
