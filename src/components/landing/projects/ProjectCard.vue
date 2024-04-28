@@ -87,7 +87,6 @@
 import GlassButton from '@/components/GlassButton.vue'
 import WebIcon from '@/components/icons/WebIcon.vue'
 import GithubIcon from '@/components/icons/GithubIcon.vue'
-const emits = defineEmits(['open-src', 'open-demo', 'open-live', 'open-read'])
 
 const props = defineProps({
   name: {
