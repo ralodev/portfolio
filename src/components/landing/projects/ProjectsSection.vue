@@ -42,7 +42,7 @@
 
 <script lang="ts" setup>
 import en_projects from '@/i18n/en/en_projects'
-import ProjectCard from './ProjectCard.vue';
+import ProjectCard from './ProjectCard.vue'
 import ProjectCardSmall from './ProjectCardSmall.vue'
 const projects = en_projects.list
 const other_projects = en_projects.list_secondary
@@ -51,7 +51,7 @@ const other_projects = en_projects.list_secondary
 <style scoped>
 .custom-shape-divider-top-1713495835 {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;

@@ -2,7 +2,7 @@
   <section
     id="contact"
     name="contact"
-    class="bg-[#fff] py-10 flex justify-center w-full min-h-[100vh] items-center relative"
+    class="bg-[#fff] py-10 flex justify-center w-full min-h-[100ch] items-center relative"
   >
     <div class="custom-shape-divider-top-1713669013">
       <svg
@@ -116,30 +116,9 @@ import LinkedinIcon from '@/components/icons/LinkedinIcon.vue'
 import ContactForm from './ContactForm.vue'
 import { ref, watch } from 'vue'
 
-const isHuman = ref(false)
-const showRecaptcha = ref(true)
-const loadingTimeout = ref(10000)
-const ReCaptchaElement = ref(null)
 const email = 'contact@ralo.dev'
 const gotcha = ref('')
 const copied = ref(false)
-function verify() {
-  console.log('Recaptcha verified')
-  isHuman.value = true
-}
-function recaptchaVerified() {
-  verify()
-}
-function recaptchaExpired() {
-  console.log('Recaptcha expired')
-  isHuman.value = false
-}
-function recaptchaFailed() {
-  console.log('Recaptcha failed')
-}
-function recaptchaError(reason: any) {
-  console.log('Recaptcha error', reason)
-}
 
 function copyEmail() {
   if (copied.value) return
@@ -149,31 +128,16 @@ function copyEmail() {
     copied.value = false
   }, 2000)
 }
-
-watch(
-  () => gotcha.value,
-  (newValue) => {
-    if (newValue) {
-      bot()
-    }
-  }
-)
-
-function bot() {
-  console.log('Gotcha')
-  window.location.href = 'http://news.rr.nihalnavath.com/posts/Message-Sent-02788c4c'
-}
 </script>
 
 <style scoped>
 .custom-shape-divider-top-1713669013 {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.4));
 }
 
 .custom-shape-divider-top-1713669013 svg {

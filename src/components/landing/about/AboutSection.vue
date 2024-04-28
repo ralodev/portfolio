@@ -2,7 +2,7 @@
   <section
     id="about"
     name="about"
-    class="bg-[#ececec] py-10 flex justify-center w-full min-h-[100vh] items-center"
+    class="bg-[#ececec] py-10 flex justify-center w-full min-h-[80ch] items-center"
   >
     <div class="content">
       <h1 class="source text-5xl font-semibold text-center tracking-wider uppercase mb-10 w-full">
