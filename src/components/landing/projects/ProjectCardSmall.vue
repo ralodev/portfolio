@@ -1,0 +1,62 @@
+<template>
+  <!-- Card container -->
+  <article class="h-full w-full rounded-xl p-5 shadow-lg border-2">
+    <!-- Card Content -->
+    <div class="flex h-full justify-evenly flex-col gap-2 font-medium">
+      <!-- Title -->
+      <h2 class="text-xl font-semibold text-ltext1 md:text-2xl">
+        {{ props.name }}
+      </h2>
+      <!-- Description -->
+      <p class="text-sm text-ltext2 md:text-base">
+        {{ description.length > 150 ? description.substring(0, 150) + '...' : description }}
+      </p>
+      <!-- Tags -->
+      <div class="my-2 flex flex-wrap gap-2 font-medium">
+        <div
+          v-for="tag in props.techstack"
+          :key="tag.toLowerCase()"
+          class="relative flex flex-nowrap whitespace-nowrap rounded-md bg-gray-300 px-2 py-1 text-xs font-normal"
+        >
+          {{ tag }}
+        </div>
+      </div>
+      <!-- Buttons -->
+      <div class="flex justify-end">
+        <a v-if="src != ''" :href="src" target="_blank" ref="noreferrer noopener">
+          <GlassButton @click="emits('open-src')" bg="bg-gray-600" size="small">
+            <template #icon>
+              <GithubIcon class="w-6 h-6"></GithubIcon>
+            </template>
+            Source code
+          </GlassButton>
+        </a>
+      </div>
+    </div>
+  </article>
+</template>
+
+<script lang="ts" setup>
+import GlassButton from '@/components/GlassButton.vue'
+import GithubIcon from '@/components/icons/GithubIcon.vue'
+
+const emits = defineEmits(['open-src', 'open-demo', 'open-live', 'open-read'])
+
+const props = defineProps({
+  name: {
+    type: String,
+    default: 'Project name'
+  },
+  description: {
+    type: String,
+    default: 'Project description'
+  },
+  src: {
+    type: String,
+    default: '#'
+  },
+  techstack: {
+    type: Array<String>
+  }
+})
+</script>
