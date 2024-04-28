@@ -8,13 +8,12 @@ import router from './router'
 
 import { createI18n } from 'vue-i18n'
 
-import en from './i18n/en'
+import messages from './i18n/en'
 
 const i18n = createI18n({
+  legacy: false,
   locale: 'en',
-  messages: {
-    en
-  }
+  messages
 })
 
 const app = createApp(App)

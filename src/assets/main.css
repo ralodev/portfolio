@@ -12,8 +12,6 @@
   input:focus {
     @apply !ring-sky-800;
   }
-  textarea {
-  }
 }
 
 .open {
