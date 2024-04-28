@@ -1,13 +1,18 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
+import SiteNavbar from './components/SiteNavbar.vue'
 </script>
 
 <template>
-  <header></header>
-  <main>
-    <RouterView />
-  </main>
+  <header class="fixed w-full z-50">
+    <SiteNavbar />
+  </header>
+  <RouterView />
   <footer></footer>
 </template>
 
-<style></style>
+<style>
+body {
+  background-color: #fff;
+}
+</style>
