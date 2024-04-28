@@ -16,9 +16,11 @@
             <span class="text-base inline-block pb-2 text-balance sm:text-wrap">
               {{ $t('experience.description') }}
             </span>
-            <GlassButton title="Download resume" class="mx-auto mb-8" @click="gotoCV">
-              <span class="px-2"> {{ $t('experience.download_button') }} </span>
-            </GlassButton>
+            <a href="/CV-Raúl_López.pdf" title="Download resume" target="_blank">
+              <GlassButton title="Download resume" class="mx-auto mb-8">
+                <span class="px-2"> {{ $t('experience.download_button') }} </span>
+              </GlassButton>
+            </a>
           </div>
         </div>
         <div class="relative col-span-12 ps-4 space-y-6 sm:col-span-9">
@@ -48,8 +50,5 @@
 import GlassButton from '@/components/GlassButton.vue'
 import en_experience from '@/i18n/en/en_experience'
 import ExperienceElement from './ExperienceElement.vue'
-function gotoCV() {
-  window.open('./cv.pdf', '_blank')
-}
 const experience = en_experience.list
 </script>

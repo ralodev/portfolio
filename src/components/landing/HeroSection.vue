@@ -10,19 +10,25 @@
         {{ $t('hero.subtitle') }}
       </p>
       <div class="flex gap-x-3 justify-center">
-        <GlassButton bg="bg-sky-700" title="LinkedIn profile">
-          <template #icon>
-            <LinkedinIcon class="w-8 h-8" />
-          </template>
-        </GlassButton>
-        <GlassButton bg="bg-neutral-700" title="GitHub profile">
-          <template #icon>
-            <GithubIcon class="w-8 h-8" />
-          </template>
-        </GlassButton>
-        <GlassButton title="Contact">
-          <span class="px-2"> {{ $t('hero.contact_button') }} </span>
-        </GlassButton>
+        <a href="https://linkedin.com/in/raul-lc" target="_blank" rel="noopener">
+          <GlassButton bg="bg-sky-700" title="LinkedIn profile">
+            <template #icon>
+              <LinkedinIcon class="w-8 h-8" />
+            </template>
+          </GlassButton>
+        </a>
+        <a href="https://github.com/ralodev" target="_blank" rel="noopener">
+          <GlassButton bg="bg-neutral-700" title="GitHub profile">
+            <template #icon>
+              <GithubIcon class="w-8 h-8" />
+            </template>
+          </GlassButton>
+        </a>
+        <RouterLink to="#contact">
+          <GlassButton title="Contact">
+            <span class="px-2"> {{ $t('hero.contact_button') }} </span>
+          </GlassButton>
+        </RouterLink>
       </div>
     </div>
     <!-- Icon Scroll Credits: http://www.hnslack.xyz/ -->
@@ -47,6 +53,7 @@
 import GlassButton from '../GlassButton.vue'
 import GithubIcon from '../icons/GithubIcon.vue'
 import LinkedinIcon from '../icons/LinkedinIcon.vue'
+import { RouterLink } from 'vue-router'
 </script>
 
 <style>

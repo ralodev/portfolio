@@ -37,3 +37,7 @@
 #app {
   white-space: pre-line;
 }
+
+body {
+  font-display: swap;
+}
