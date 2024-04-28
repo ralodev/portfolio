@@ -71,7 +71,7 @@
             <span class="t_over"></span>
             <div class="tilt-box">
               <img
-                :src="`/src/assets/img/projects/${props.image}`"
+                :src="getImageUrl()"
                 :alt="name + ' main image'"
                 class="object-cover object-center mx-auto max-h-[490px]"
               />
@@ -120,7 +120,7 @@ const props = defineProps({
 })
 
 const getImageUrl = () => {
-  return `@/assets/img/projects/${props.image}`
+  return new URL(`../../../assets/img/projects/${props.image}`, import.meta.url).href
 }
 </script>
 
