@@ -88,7 +88,7 @@ import LinkedinIcon from '../icons/LinkedinIcon.vue'
 .icon-scroll {
   width: 27px;
   height: 45px;
-  margin-left: -6px;
+  margin-left: -14px;
   bottom: 10px;
   margin-top: -35px;
   border: 2px solid #000;
@@ -100,7 +100,7 @@ import LinkedinIcon from '../icons/LinkedinIcon.vue'
   width: 8px;
   height: 8px;
   background: #000;
-  margin-left: -3px;
+  margin-left: -4px;
   top: 8px;
   border-radius: 4px;
   animation-duration: 1.5s;
