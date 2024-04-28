@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
@@ -13,6 +13,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@fontsource-variable/open-sans": "^5.0.28",
+    "@fontsource/source-sans-pro": "^5.0.8",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-i18n": "9",
