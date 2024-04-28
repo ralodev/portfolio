@@ -7,12 +7,11 @@ export default {
     list: [
       {
         id: 0,
-        title: "Bachelor's Degree in Computer Systems Engineering",
-        institution: 'Technological Institute of Oaxaca',
-        area: 'Backend Web Development',
+        title: 'Bachelor of Computer Systems Engineering',
+        institution: 'Instituto Tecnológico de Oaxaca',
         url: 'http://www.itoaxaca.edu.mx/',
         description:
-          "I'm a graduate Computer Systems Engineer with a specialization in Emerging Technologies. In my career, I learned about the fundamentals of computer science, software development, and emerging technologies such as Artificial Intelligence, Augmented Reality, and Virtual Reality.",
+          'I graduated with a degree in Computer Systems Engineering, specializing in Software Development with Emerging Technologies.',
         startDate: '2018-08',
         endDate: '2023-07',
         courses: ['Web Development', 'Data Structures', 'Algorithms', 'Databases']
@@ -21,10 +20,9 @@ export default {
         id: 1,
         title: 'AlumniONE, Oracle Next Education',
         institution: 'Oracle Next Education',
-        area: 'Backend Web Development',
         url: 'https://oracle.com/lad/one',
         description:
-          "I'm currently enrolled in the Oracle Next Education program, where I'm learning about web development with a focus on Backend using Java and Spring Boot.",
+          'I am currently enrolled in the Oracle Next Education program, focusing on Backend development using Java and Spring Boot.',
         startDate: '2024-01',
         endDate: '2024-10',
         courses: ['JavaScript', 'Nodejs', 'Java', 'SpringBoot']
@@ -36,58 +34,58 @@ export default {
     list: [
       {
         id: 0,
-        title: 'Scientific Research Article Publication',
-        date: '2024-02',
+        title: 'Publication of Scientific Research Article',
+        date: '2023-09-30',
         url: 'https://doi.org/10.58763/c2024259',
         awarder:
-          'Research Center in Education, Nature, Culture, and Innovation for the Amazon - CIENCIA S.A.S',
+          'Research Center on Education, Nature, Culture, and Innovation for the Amazon - CIENCIA S.A.S',
         summary:
-          'Publication of the manuscript titled "Sustainability Behaviors: An Application of VBN Theory in Engineering Students".'
+          'The manuscript titled "Sustainability Behaviors: An Application of the VBN Theory in Engineering Students" applies the Values, Beliefs, and Norms (VBN) theory to understand how these factors influence sustainability behaviors.'
       },
       {
         id: 1,
-        title: "LinkedIn's Top Voices: Software Development",
+        title: 'Top Voices on LinkedIn: Software Development',
         date: '2024-01',
         url: 'https://www.linkedin.com/in/raul-lc/',
         awarder: 'LinkedIn',
         summary:
-          'Recognized as one of the top voices in software development on LinkedIn, for sharing knowledge and experiences with the community.'
+          'Recognized as a Top Voice in software development on LinkedIn, being among the top 2% of global contributors in collaborative articles on Software Development.'
       },
       {
         id: 2,
         title:
-          'Honorific Mention in the Third National Scientific Conference "Sustainable balance between Technology, Environment and Society"',
+          'Honorable Mention at the Third National Scientific Conference "Sustainable Balance between Technology, Environment and Society"',
         date: '2023-06',
-        awarder: 'National Technological Institute of Mexico',
+        awarder: 'National Institute of Technology of Mexico',
         summary:
-          'Display and presentation of the research article "Sustainability behaviors among engineering students"'
+          'Exhibition and presentation of the research paper "Sustainability behaviors among engineering students"'
       },
       {
         id: 3,
-        title: '1st place in ITOAXACA Competitive Programming Contest 2023',
+        title: '1st place in the ITOAXACA 2023 Competitive Programming Contest',
         date: '2023-06',
-        awarder: "M.C. Dalia Silva Martínez, Director of the School's Coders Club Program",
+        awarder: 'M.C. Dalia Silva Martínez, Director of the Coders Club Program at the School',
         summary:
-          "First place was achieved in the Competitive Programming Contest, obtaining the highest score in the competition's university category."
+          'Achieved first place in the Competitive Programming Contest, scoring the highest points in the university category of the competition.'
       },
       {
         id: 4,
         title: '2nd place in the La Salle Programming Contest 2022',
         date: '2022-09-30',
         awarder:
-          'Eng. José Adrián Villanueva, Director of the School of Engineering and Architecture',
+          'Ing. José Adrián Villanueva, Director of the School of Engineering and Architecture',
         summary:
-          'My team won second place in the Programming Contest held at LaSalle University Oaxaca, presenting a project that solves the problem of distributing goods to non-profit organizations through a web application using machine learning.'
+          'My team won second place in the Programming Contest held at the University LaSalle Oaxaca, presenting a project that solves the problem of distributing goods to nonprofit organizations through a web application using machine learning.'
       },
       {
         id: 5,
         title:
-          '2nd place in the 2nd National Scientific Conference "SMEs and Sustainability in the Framework of the New Normal"',
+          '2nd place at the 2nd National Scientific Conference "SMEs and Sustainability in the Context of the New Normal"',
         date: '2022-05-31',
         awarder:
-          'National Technological Institute of Mexico, Higher Technological Institute of the Sierra Negra de Ajalpan and the Southern Regional Complex of the Benemérita Universidad Autónoma de Puebla',
+          'National Institute of Technology of Mexico, Higher Technological Institute of the Black Sierra of Ajalpan and the Southern Regional Complex of the Autonomous University of Puebla',
         summary:
-          'Second place was achieved in the Second National Scientific Conference, with the research article "ANALYSIS OF INTERNET ACCESS SERVICE IN OAXACA DURING THE PERIOD 2013-2021"'
+          'Achieved second place at the Second National Scientific Conference, with the research paper "ANALYSIS OF INTERNET ACCESS SERVICE IN OAXACA DURING THE PERIOD 2013-2021"'
       }
     ]
   }

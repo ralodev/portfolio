@@ -23,11 +23,11 @@
           <ProjectCard
             :name="$t(`projects.list[${project.id}].name`)"
             :techstack="project.techstack"
-            :image="$t(`projects.list[${project.id}].image`)"
+            :image="project.image"
             :startDate="$t(`projects.list[${project.id}].startDate`)"
             :description="$t(`projects.list[${project.id}].description`)"
-            :src="$t(`projects.list[${project.id}].src`)"
-            :url="$t(`projects.list[${project.id}].url`)"
+            :src="project.src"
+            :url="project.url"
           />
         </li>
       </ul>

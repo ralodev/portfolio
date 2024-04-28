@@ -10,12 +10,12 @@
         {{ $t('hero.subtitle') }}
       </p>
       <div class="flex gap-x-3 justify-center">
-        <GlassButton bg="bg-sky-700">
+        <GlassButton bg="bg-sky-700" title="LinkedIn profile">
           <template #icon>
             <LinkedinIcon class="w-8 h-8" />
           </template>
         </GlassButton>
-        <GlassButton bg="bg-neutral-700">
+        <GlassButton bg="bg-neutral-700" title="GitHub profile">
           <template #icon>
             <GithubIcon class="w-8 h-8" />
           </template>

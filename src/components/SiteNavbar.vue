@@ -19,18 +19,9 @@
           }}</router-link>
         </nav>
         <div class="source text-black">
-          <!-- <select v-model="$i18n.locale">
-            <option
-              v-for="locale in $i18n.availableLocales"
-              :key="`locale-${locale}`"
-              :value="locale"
-            >
-              {{ locale }}
-            </option>
-          </select> -->
           <LanguageSelector />
         </div>
-        <button class="md:hidden" @click="showMenu = !showMenu">
+        <button class="md:hidden" @click="showMenu = !showMenu" title="open navigation menu">
           <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
             <path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />
           </svg>

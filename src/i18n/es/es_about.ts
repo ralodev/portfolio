@@ -1,16 +1,16 @@
 export default {
   title: 'Acerca de',
   summary:
-    'Hola 👋, mi nombre es Raúl López, soy un programador apasionado de 27 años de edad, originario de México. Soy Ingeniero en Sistemas Computacionales, con especialización en Desarrollo de Software con Tecnologías Emergentes.\n\n Mi compromiso con el aprendizaje continuo me ha llevado a participar en el programa Oracle Next Education, y estoy orgulloso de ser reconocido como Top Voice de LinkedIn en Desarrollo de Software. Estoy dedicado a avanzar en el campo de la programación y hacer contribuciones significativas a la comunidad. ¡Conectemos e innovemos juntos!',
+    'Hola 👋, mi nombre es Raúl López, soy un apasionado programador de 27 años de edad, originario de México. Soy Ingeniero en Sistemas Computacionales, con especialización en Desarrollo de Software con Tecnologías Emergentes.\n\n Mi compromiso con el aprendizaje continuo me ha llevado a participar en el programa Oracle Next Education, y estoy orgulloso de ser reconocido como Top Voice de LinkedIn en Desarrollo de Software. Estoy dedicado a avanzar en el campo de la programación y hacer contribuciones significativas a la comunidad. ¡Conectemos e innovemos juntos!',
   education: {
     title: 'Educación',
     list: [
       {
-        title: 'Licenciatura en Ingeniería de Sistemas Computacionales',
+        title: 'Ingeniería en Sistemas Computacionales',
         institution: 'Instituto Tecnológico de Oaxaca',
         url: 'http://www.itoaxaca.edu.mx/',
         description:
-          'Soy ingeniero en sistemas computacionales graduado con especialización en Tecnologías Emergentes. En mi carrera, aprendí sobre los fundamentos de la informática, el desarrollo de software y tecnologías emergentes como la Inteligencia Artificial, la Realidad Aumentada y la Realidad Virtual.',
+          'Me gradué de la carrera de Ingeniería en Sistemas Computacionales, con especialidad en Desarrollo de Software con Tecnología Emergentes.',
         startDate: '2018-08',
         endDate: '2023-07'
       },
@@ -19,7 +19,7 @@ export default {
         institution: 'Oracle Next Education',
         url: 'https://oracle.com/lad/one',
         description:
-          'Actualmente estoy inscrito en el programa Oracle Next Education, donde estoy aprendiendo sobre desarrollo web con un enfoque en Backend usando Java y Spring Boot.',
+          'Actualmente estoy inscrito en el programa Oracle Next Education, en la rama enfocada en Backend usando Java y Spring Boot.',
         startDate: '2024-01',
         endDate: '2024-10'
       }
@@ -35,7 +35,7 @@ export default {
         awarder:
           'Centro de Investigación en Educación, Naturaleza, Cultura e Innovación para la Amazonía - CIENCIA S.A.S',
         summary:
-          'El manuscrito titulado "Comportamientos de Sostenibilidad: Una Aplicación de la Teoría VBN en Estudiantes de Ingeniería" aplica la teoría de Valores, Creencias y Normas (VBN) para entender cómo estos factores influyen en los comportamientos de sostenibilidad de los estudiantes de Ingeniería de Sistemas del Tecnológico Nacional de México, campus Oaxaca. Usando un enfoque cuantitativo descriptivo, la investigación analizó la relación entre los valores, creencias, normas de los estudiantes y su participación en prácticas de sostenibilidad.'
+          'El manuscrito titulado "Comportamientos de Sostenibilidad: Una Aplicación de la Teoría VBN en Estudiantes de Ingeniería" aplica la teoría de Valores, Creencias y Normas (VBN) para entender cómo estos factores influyen en los comportamientos de sostenibilidad.'
       },
       {
         title: 'Voces destacadas de LinkedIn: Desarrollo de Software',
@@ -43,7 +43,7 @@ export default {
         url: 'https://www.linkedin.com/in/raul-lc/',
         awarder: 'LinkedIn',
         summary:
-          'Reconocido como una de las voces más destacadas en desarrollo de software en LinkedIn, por compartir conocimiento y experiencias con la comunidad.'
+          'Reconocido como Top Voice en desarrollo de software en LinkedIn, por estar entre el 2% de mejores contribuyentes a nivel mundial en artículos colaborativos de Desarrollo de Software.'
       },
       {
         title:

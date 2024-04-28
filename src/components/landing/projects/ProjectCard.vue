@@ -47,7 +47,7 @@
             </GlassButton>
           </a>
           <a v-if="url != ''" :href="url" target="_blank" rel="noreferrer noopener">
-            <GlassButton v-if="url" :disabled="!url" padding="16">
+            <GlassButton v-if="url" :disabled="!url" padding="16" :title="`${props.name} website`">
               <template #icon>
                 <WebIcon class="w-6 h-6" />
               </template>
@@ -71,7 +71,7 @@
             <span class="t_over"></span>
             <div class="tilt-box">
               <img
-                :src="getImageUrl()"
+                :src="`/src/assets/img/projects/${props.image}`"
                 :alt="name + ' main image'"
                 class="object-cover object-center mx-auto max-h-[490px]"
               />
@@ -120,7 +120,7 @@ const props = defineProps({
 })
 
 const getImageUrl = () => {
-  return new URL(`/src/assets/img/projects/${props.image}`, import.meta.env.VITE_URL).href
+  return `@/assets/img/projects/${props.image}`
 }
 </script>
 

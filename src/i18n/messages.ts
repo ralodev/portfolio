@@ -8,6 +8,16 @@ import es_experience from './es/es_experience'
 import es_projects from './es/es_projects'
 import es_about from './es/es_about'
 import es_contact from './es/es_contact'
+import fr_hero from './fr/fr_hero'
+import fr_experience from './fr/fr_experience'
+import fr_projects from './fr/fr_projects'
+import fr_about from './fr/fr_about'
+import fr_contact from './fr/fr_contact'
+import jp_hero from './jp/jp_hero'
+import jp_experience from './jp/jp_experience'
+import jp_projects from './jp/jp_projects'
+import jp_about from './jp/jp_about'
+import jp_contact from './jp/jp_contact'
 export default {
   en: {
     hero: en_hero,
@@ -22,5 +32,19 @@ export default {
     projects: es_projects,
     about: es_about,
     contact: es_contact
+  },
+  fr: {
+    hero: fr_hero,
+    experience: fr_experience,
+    projects: fr_projects,
+    about: fr_about,
+    contact: fr_contact
+  },
+  jp: {
+    hero: jp_hero,
+    experience: jp_experience,
+    projects: jp_projects,
+    about: jp_about,
+    contact: jp_contact
   }
 }

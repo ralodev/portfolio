@@ -112,7 +112,7 @@ const submitForm = async () => {
     </span>
 
     <span class="mx-auto">
-      <GlassButton :disabled="sending || !isMessageAvailable" type="submit">
+      <GlassButton :disabled="sending || !isMessageAvailable" type="submit" title="Send message">
         <span v-if="isMessageAvailable" class="px-3">
           {{ sending ? $t('contact.sending') : $t('contact.send') }}
         </span>

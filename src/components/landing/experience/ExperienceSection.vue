@@ -45,13 +45,9 @@
 </template>
 
 <script lang="ts" setup>
-import { useI18n } from 'vue-i18n'
-import { ref } from 'vue'
 import GlassButton from '@/components/GlassButton.vue'
 import en_experience from '@/i18n/en/en_experience'
 import ExperienceElement from './ExperienceElement.vue'
-const { rt, tm } = useI18n()
-const more = ref(false)
 function gotoCV() {
   window.open('./cv.pdf', '_blank')
 }

@@ -53,20 +53,22 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, shallowRef } from 'vue'
 import { useI18n } from 'vue-i18n'
 import EnglishIcon from './icons/EnglishIcon.vue'
 import SpanishIcon from './icons/SpanishIcon.vue'
 import FrenchIcon from './icons/FrenchIcon.vue'
+import JapaneseIcon from './icons/JapaneseIcon.vue'
 
 const langDropdown = ref(false)
-const selectedLanguageFlag = ref(EnglishIcon)
+const selectedLanguageFlag = shallowRef(EnglishIcon)
 const selectedLanguage = ref('EN')
 const locale = useI18n()
 const languageOptions = [
   { language: 'English', flagIcon: EnglishIcon, code: 'en' },
   { language: 'Español', flagIcon: SpanishIcon, code: 'es' },
-  { language: 'Français', flagIcon: FrenchIcon, code: 'fr' }
+  { language: 'Français', flagIcon: FrenchIcon, code: 'fr' },
+  { language: 'Japanese', flagIcon: JapaneseIcon, code: 'jp' }
 ]
 interface OptionObject {
   language: string

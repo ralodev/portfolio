@@ -1,11 +1,11 @@
 export default {
-  title: '¡Hola, soy Raúl López Cruz!',
+  title: 'Bonjour, je suis Raúl López Cruz',
   subtitle:
-    'Desarrollador Full Stack experimentado dedicado a simplificar procesos y mejorar la experiencia del usuario a través de soluciones innovadoras.',
+    'Développeur Full Stack expérimenté dédié à simplifier les processus et améliorer l’expérience utilisateur à travers des solutions innovantes.',
   name: 'Raúl López Cruz',
   email: 'contact@ralo.dev',
   url: 'https://ralo.dev/',
-  contact_button: 'Contáctame',
+  contact_button: 'Contactez-moi',
   profiles: [
     {
       network: 'LinkedIn',
@@ -16,5 +16,5 @@ export default {
       url: 'https://github.com/ralodev'
     }
   ],
-  home: 'Inicio'
+  home: 'Accueil'
 }

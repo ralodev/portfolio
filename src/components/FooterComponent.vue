@@ -71,7 +71,7 @@ import { RouterLink } from 'vue-router';
               <animate fill="freeze" attributeName="height" begin="0.8s" dur="0.6s" values="0;5" />
             </rect>
           </svg>
-          <span class="self-center text-2xl font-semibold">Ralodev</span>
+          <h1 class="self-center text-2xl font-semibold">Ralodev</h1>
         </div>
         <span class="text-sm">
           Thank you for visiting my portfolio.
@@ -97,7 +97,7 @@ import { RouterLink } from 'vue-router';
           </ul>
         </div>
         <div class="space-y-3">
-          <h3 class="uppercase">Resources</h3>
+          <h2 class="uppercase">Resources</h2>
           <ul class="space-y-1">
             <li>
               <a href="\CV-Raúl_López.pdf" target="_blank">Resume</a>
@@ -111,7 +111,7 @@ import { RouterLink } from 'vue-router';
           </ul>
         </div>
         <div class="space-y-3">
-          <h3 class="uppercase">Developers</h3>
+          <h2 class="uppercase">Developers</h2>
           <ul class="space-y-1">
             <li>
               <a rel="noopener noreferrer" href="#">Source code</a>
@@ -125,7 +125,7 @@ import { RouterLink } from 'vue-router';
           </ul>
         </div>
         <div class="space-y-3">
-          <div class="uppercase">Social media</div>
+          <h2 class="uppercase">Social media</h2>
           <div class="flex justify-start space-x-3">
             <a rel="noopener noreferrer" href="#" title="Facebook" class="flex items-center p-1">
               <svg
