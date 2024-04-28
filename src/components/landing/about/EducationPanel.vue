@@ -50,7 +50,6 @@
 <script lang="ts" setup>
 import CollapsiblePanel from '@/components/CollapsiblePanel.vue'
 import en_about from '@/i18n/en/en_about'
-import one from '/src/assets/img/one.webp'
 
 const dateOptions: Intl.DateTimeFormatOptions = {
   year: 'numeric',
