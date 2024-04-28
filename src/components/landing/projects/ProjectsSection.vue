@@ -15,7 +15,7 @@
       </svg>
     </div>
     <div name="experience-content" class="content z-[2] pt-[100px]">
-      <h1 class="source text-5xl font-semibold text-center tracking-wider uppercase mb-10 w-full">
+      <h1 class="section__title">
         {{ $t('projects.title') }}
       </h1>
       <ul class="pb-10 space-y-16 lg:space-y-4">
@@ -33,7 +33,12 @@
       </ul>
       <ul class="grid md:grid-cols-2 gap-10">
         <li class="flex" v-for="project in other_projects" :key="project.name">
-          <ProjectCardSmall v-bind="project" />
+          <ProjectCardSmall
+            :name="$t(`projects.list_secondary[${project.id}].name`)"
+            :description="$t(`projects.list_secondary[${project.id}].description`)"
+            :src="project.src"
+            :techstack="project.techstack"
+          />
         </li>
       </ul>
     </div>

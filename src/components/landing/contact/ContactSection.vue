@@ -28,16 +28,16 @@
       </svg>
     </div>
     <div class="content mt-10">
-      <h1 class="source text-5xl font-semibold text-center tracking-wider uppercase mb-10 w-full">
+      <h1 class="section__title">
         {{ $t('contact.title') }}
       </h1>
       <div class="flex w-full flex-col gap-y-5">
-        <p class="text-center text-lg source">
+        <p class="text-center sm:text-lg source">
           {{ $t('contact.description') }}
         </p>
         <span class="h-1 w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
         <span class="text-center">
-          <p class="text-center text-lg source">
+          <p class="text-center sm:text-lg source">
             {{ $t('contact.social') }}
           </p>
           <div class="flex w-full flex-wrap items-center justify-center gap-5 pt-3">
@@ -64,7 +64,7 @@
                     : 'cursor-pointer bg-sky-800 hover:bg-sky-900 '
                 "
               >
-                <span v-if="!copied" class="flex gap-x-1 text-base source items-center">
+                <span v-if="!copied" class="flex gap-x-1 text-sm sm:text-base source items-center">
                   <CopyIcon class="w-4 h-4" />
                   {{ $t('contact.copy') }}
                 </span>
@@ -98,7 +98,7 @@
         </span>
         <span class="h-1 w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
         <div class="flex w-full flex-col text-center justify-center">
-          <p class="text-center text-lg source">
+          <p class="text-center sm:text-lg source">
             {{ $t('contact.form') }}
           </p>
           <ContactForm />

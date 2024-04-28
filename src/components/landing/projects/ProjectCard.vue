@@ -6,21 +6,22 @@
       <!-- Info -->
       <div class="order-2 flex w-full flex-col justify-center px-6 md:w-1/2 md:px-2">
         <!-- Title -->
-        <h2 class="text-4xl src font-bold text-ltext1 text-slate-600 tracking-wider">
+        <h2 class="text-2xl open sm:text-4xl font-bold text-ltext1 text-slate-700">
           {{ name }}
         </h2>
+        <hr />
         <!-- Tags -->
-        <div class="my-2 flex flex-wrap gap-2 font-medium src">
+        <div class="my-2 flex flex-wrap gap-2 font-medium source">
           <div
             v-for="tech in techstack"
             :key="tech.toLowerCase()"
-            class="relative flex flex-nowrap whitespace-nowrap rounded-md bg-gray-300 px-2 py-1 text-sm font-normal"
+            class="relative flex flex-nowrap whitespace-nowrap rounded-md bg-gray-300 px-2 py-1 text-xs sm:text-sm font-normal"
           >
             {{ tech }}
           </div>
         </div>
         <!-- Description -->
-        <p class="pt-2 text-base text-ltext2 open">
+        <p class="pt-2 text-sm sm:text-base text-ltext2 open">
           {{ description }}
         </p>
 

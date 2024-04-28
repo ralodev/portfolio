@@ -5,10 +5,10 @@
     class="bg-[#ececec] py-10 flex justify-center w-full min-h-[80ch] items-center"
   >
     <div class="content">
-      <h1 class="source text-5xl font-semibold text-center tracking-wider uppercase mb-10 w-full">
+      <h1 class="section__title">
         {{ $t('about.title') }}
       </h1>
-      <div class="text-center inline-block mb-10">
+      <div class="text-center inline-block mt-10 mb-10 sm:mt-0">
         <div name="photo-frame" class="relative group inline-block md:block mb-8 md:mb-0">
           <img
             src="@/assets/img/profile.webp"
@@ -19,7 +19,7 @@
             class="absolute h-[244px] w-[244px] translate-y-[-10px] translate-x-[22px] bg-white rotate-6 shadow-xl rounded-lg md:group-hover:rotate-0 duration-300"
           ></div>
         </div>
-        <p class="text-lg open text-start">
+        <p class="text-base sm:text-lg open text-start">
           {{ $t('about.summary') }}
         </p>
       </div>

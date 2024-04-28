@@ -1,23 +1,19 @@
 <template>
-  <section
-    id="experience"
-    name="experience"
-    class="bg-[#ececec] py-10 flex justify-center w-full min-h-[80ch] items-center"
-  >
+  <section id="experience" name="experience">
     <div>
-      <h1 class="source text-5xl font-semibold text-center tracking-wider uppercase mb-10 w-full">
+      <h1 class="section__title">
         {{ $t('experience.title') }}
       </h1>
       <div class="relative grid gap-4 sm:grid-cols-12 content">
         <div class="col-span-12 sm:col-span-3">
           <div
-            class="text-center sm:text-left sm:before:block before:w-full before:mx-auto before:h-4 before:mt-[5px] before:mb-5 before:rounded-lg before:hidden sm:before:mx-0 before:bg-gradient-to-l before:from-sky-900 before: sticky top-24"
+            class="text-center sm:text-left sm:before:block before:w-full before:mx-auto before:h-4 before:mt-[5px] before:mb-5 before:rounded-lg before:hidden sm:before:mx-0 before:bg-gradient-to-l before:from-sky-900 before: sm:sticky top-24"
           >
             <span class="text-base inline-block pb-2 text-balance sm:text-wrap">
               {{ $t('experience.description') }}
             </span>
             <a href="/CV-Raúl_López.pdf" title="Download resume" target="_blank">
-              <GlassButton title="Download resume" class="mx-auto mb-8">
+              <GlassButton title="Download resume" class="mx-auto mb-4">
                 <span class="px-2"> {{ $t('experience.download_button') }} </span>
               </GlassButton>
             </a>
@@ -52,3 +48,16 @@ import en_experience from '@/i18n/en/en_experience'
 import ExperienceElement from './ExperienceElement.vue'
 const experience = en_experience.list
 </script>
+
+<style scoped>
+#experience {
+  background-color: rgb(236 236 236);
+  padding-top: 2.5rem /* 40px */;
+  padding-bottom: 2.5rem /* 40px */;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 80ch;
+  align-items: center;
+}
+</style>

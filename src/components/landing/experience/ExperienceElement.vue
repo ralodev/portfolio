@@ -6,14 +6,14 @@
       <h1 class="text-xl font-bold text-sky-900 open">
         {{ props.title }}
       </h1>
-      <time class="text-sm font-mono font-semibold text-gray-700">
+      <time class="text-sm sm:text-sm font-mono font-semibold text-gray-700">
         {{ props.start }} - {{ props.end }} ({{ totalTime() }} {{ $t('experience.months') }})
       </time>
       <span class="block">
         <component
           :is="props.url == '#' ? 'h2' : 'a'"
           :href="props.url"
-          class="text-lg font-semibold source items-center gap-x-1 inline-flex"
+          class="text-base sm:text-lg font-semibold source items-center gap-x-1 inline-flex"
           :class="props.url == '#' ? 'cursor-default' : 'cursor-pointer hover: hover:text-sky-700'"
           target="_blank"
           rel="noopener noreferrer"
@@ -34,7 +34,7 @@
           </svg>
         </component>
       </span>
-      <div class="text-base pt-1 open">
+      <div class="text-sm sm:text-base pt-1 open">
         <p>
           {{ props.description }}
         </p>

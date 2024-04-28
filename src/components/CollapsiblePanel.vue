@@ -1,17 +1,20 @@
 <template>
   <div class="panel rounded-2xl border-2">
     <div
-      class="sticky top-16 z-[2] flex cursor-pointer rounded-t-2xl border-b-2 bg-gray-50 px-2 py-2 transition-all duration-300"
-      :class="collapsed ? 'rounded-b-2xl border-transparent delay-500' : ' rounded-b-none'"
+      class="sticky top-[70px] sm:top-16 z-[2] flex cursor-pointer rounded-t-2xl border-b-2 bg-gray-50 px-2 py-2 transition-all duration-1000"
+      :class="collapsed ? 'rounded-b-2xl border-transparent delay-500' : ' rounded-b-none delay-0'"
       @click="toggle"
     >
       <!-- Icono del panel -->
       <slot name="icon"></slot>
       <!-- Header del panel -->
-      <span v-if="header" class="my-auto text-2xl font-semibold source">{{ header }}</span>
+      <span v-if="header" class="my-auto text-xl sm:text-2xl font-semibold source">{{
+        header
+      }}</span>
 
       <button
         v-if="toggleable"
+        title="Expand or collapse panel"
         type="button"
         class="panel-toggler my-auto ml-auto h-6 w-6 self-end rounded-full border-2 border-black border-opacity-50"
       >

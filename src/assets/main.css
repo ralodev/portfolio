@@ -9,6 +9,9 @@
 @tailwind utilities;
 
 @layer base {
+  .section__title {
+    @apply source text-4xl sm:text-5xl font-semibold text-center tracking-wider uppercase mb-5 sm:mb-10 w-full;
+  }
   input:focus {
     @apply !ring-sky-800;
   }
