@@ -1,14 +1,14 @@
 <template>
   <!-- Card container -->
-  <article class="h-full w-full rounded-xl p-5 shadow-lg border-2">
+  <article class="h-full w-full rounded-xl border-2 p-5 shadow-lg">
     <!-- Card Content -->
-    <div class="flex h-full justify-evenly flex-col gap-2 font-medium">
+    <div class="flex h-full flex-col justify-evenly gap-2 font-medium">
       <!-- Title -->
-      <h2 class="text-xl font-semibold text-ltext1 md:text-2xl">
+      <h2 class="text-ltext1 text-xl font-semibold md:text-2xl">
         {{ props.name }}
       </h2>
       <!-- Description -->
-      <p class="text-sm text-ltext2 md:text-base">
+      <p class="text-ltext2 text-sm md:text-base">
         {{ description.length > 150 ? description.substring(0, 150) + '...' : description }}
       </p>
       <!-- Tags -->
@@ -26,7 +26,7 @@
         <a v-if="src != ''" :href="src" target="_blank" ref="noreferrer noopener">
           <GlassButton @click="emits('open-src')" bg="bg-gray-600" size="small">
             <template #icon>
-              <GithubIcon class="w-6 h-6"></GithubIcon>
+              <GithubIcon class="h-6 w-6"></GithubIcon>
             </template>
             Source code
           </GlassButton>

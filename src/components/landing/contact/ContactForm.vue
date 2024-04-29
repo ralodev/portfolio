@@ -70,7 +70,7 @@ const submitForm = async () => {
 <template>
   <form
     @submit.prevent="submitForm"
-    class="flex w-full max-w-[600px] flex-col gap-y-5 self-center pt-3 text-start open"
+    class="open flex w-full max-w-[600px] flex-col gap-y-5 self-center pt-3 text-start"
   >
     <label class="block" for="name">
       {{ $t('contact.name_label') }}
@@ -80,7 +80,7 @@ const submitForm = async () => {
         v-model="name"
         autocomplete="name"
         :placeholder="$t('contact.name_placeholder')"
-        class="block px-3 min-h-[45px] w-full select-all rounded-md rounded-s-md border-[1px] bg-white outline-0 focus:outline-1 focus:outline-sky-700 border-neutral-400"
+        class="block min-h-[45px] w-full select-all rounded-md rounded-s-md border-[1px] border-neutral-400 bg-white px-3 outline-0 focus:outline-1 focus:outline-sky-700"
         required
       />
     </label>
@@ -92,7 +92,7 @@ const submitForm = async () => {
         v-model="email"
         autocomplete="email"
         :placeholder="$t('contact.email_placeholder')"
-        class="block px-3 min-h-[45px] w-full select-all rounded-md rounded-s-md border-[1px] bg-white outline-0 focus:outline-1 focus:outline-sky-700 border-neutral-400"
+        class="block min-h-[45px] w-full select-all rounded-md rounded-s-md border-[1px] border-neutral-400 bg-white px-3 outline-0 focus:outline-1 focus:outline-sky-700"
         required
       />
     </label>
@@ -101,13 +101,13 @@ const submitForm = async () => {
       <textarea
         name="message"
         v-model="message"
-        class="block px-3 py-2 min-h-[45px] w-full select-all rounded-md rounded-s-md border-[1px] bg-white outline-0 focus:outline-1 focus:outline-sky-700 border-neutral-400"
+        class="block min-h-[45px] w-full select-all rounded-md rounded-s-md border-[1px] border-neutral-400 bg-white px-3 py-2 outline-0 focus:outline-1 focus:outline-sky-700"
         :placeholder="$t('contact.message_placeholder')"
         required
       ></textarea>
     </label>
 
-    <span v-if="!isMessageAvailable" class="text-red-600 source text-sm text-center">
+    <span v-if="!isMessageAvailable" class="source text-center text-sm text-red-600">
       {{ $t('contact.restriction') }}
     </span>
 

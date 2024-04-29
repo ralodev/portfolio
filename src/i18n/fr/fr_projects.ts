@@ -11,8 +11,9 @@ export default {
       image: 'cvfast_cover.webp',
       startDate: '2024-02',
       description:
-        'CVFast est un outil en ligne qui vous permet de créer un CV professionnel en quelques minutes. Il comprend une variété de modèles et d’options de personnalisation.',
-      github: 'https://github.com/ralodev/'
+        "CVFast est un constructeur de CV en ligne qui vous permet de créer un CV professionnel en quelques minutes. Il comprend une variété de modèles et d'options de personnalisation.",
+      src: 'https://github.com/ralodev/',
+      url: 'https://cvfast.com/'
     },
     {
       id: 1,
@@ -22,41 +23,43 @@ export default {
       image: 'sgip_cover.webp',
       endDate: '2023-07',
       description:
-        'Un système de gestion des ressources humaines (HRMS) web qui permet de gérer les informations du personnel d’une entreprise. Développé pour l’Institut Technologique de Oaxaca. L’application est actuellement en production, hébergée sur un serveur privé.',
-      github: 'https://sgip.ralo.dev/'
+        "Une application web de GRH qui permet de gérer les informations du personnel d'une entreprise. Développée pour l'Institut Technologique d'Oaxaca (ITO). L'application est actuellement en production, hébergée sur un serveur privé.",
+      src: '',
+      url: 'https://sgip.ralo.dev/'
     },
     {
       id: 2,
+      name: 'Vuefolio',
+      image: 'vuefolio_cover.webp',
+      techstack: ['JavaScript', 'HTML5', 'Tailwind'],
+      description:
+        "Un modèle de portfolio construit avec Vue.js, i18n et TypeScript. Il est hautement personnalisable, facile à configurer et optimisé de manière approfondie pour la performance, le SEO et l'accessibilité.",
+      src: 'https://github.com/ralodev/vuefolio',
+      url: 'https://vuefolio.netlify.app/'
+    },
+    {
+      id: 3,
       name: 'Générateur de FSM',
       techstack: ['JavaScript', 'HTML5', 'CSS3'],
       image: 'fsm_cover.webp',
       startDate: '2024-01',
       description:
-        'Le Générateur de FSM est une application web qui vous permet de générer des Machines à États Finis (FSM) / Automates Finis Déterministes (DFA) à partir d’expressions régulières.',
-      github: 'https://ralodev.github.io/FSM-Generator/'
-    },
-    {
-      id: 3,
-      name: 'Encrypteur de JavaScript',
-      startDate: '2024-01',
-      image: 'encriptador_cover.webp',
-      techstack: ['JavaScript', 'HTML5', 'Tailwind'],
-      description:
-        'Application web pour crypter et décrypter des messages textuels en utilisant un dictionnaire prédéfini, créée pour le cours - 01 de Oracle Next Education.',
-      github: 'https://github.com/ralodev/'
+        "Générateur de FSM est une application web qui vous permet de générer des automates à états finis (FSM) / Automates finis déterministes (DFA) à partir d'expressions régulières.",
+      src: 'https://github.com/ralodev/FSM-Generator',
+      url: 'https://fsm.ralo.dev/'
     }
   ],
   list_secondary: [
     {
       id: 0,
-      name: 'Spring Advanced Authentication',
+      name: 'Spring Boot Adv-Authentication',
       techstack: ['Spring Boot', 'Java', 'JWT'],
       image: '',
       startDate: '2022-12',
       description:
-        'Le modèle d’authentification avancée Spring est un projet de base qui fournit un point de départ pour développer des services web RESTful avec Spring Boot. Il inclut des fonctionnalités telles que l’envoi d’emails, l’authentification, la sécurité et la génération de tokens JWT.',
-      github: 'https://github.com/ralodev/',
-      endDate: '2023-07-31'
+        "Spring AdvAuth est un projet modèle qui inclut des fonctionnalités telles que la redirection d'emails SMTP, l'authentification basée sur JWT, l'autorisation basée sur les rôles et des configurations de sécurité personnalisées.",
+      src: 'https://github.com/ralodev/SpringSecurity-Jwt-JavaMail',
+      url: ''
     },
     {
       id: 1,
@@ -65,8 +68,9 @@ export default {
       image: '',
       startDate: '2021',
       description:
-        'Un jeu basé sur le populaire jeu Crossy Road, développé en C et C++ utilisant OpenGL et GLUT pour les graphismes 3D.',
-      github: 'https://github.com/ralodev/'
+        'Un jeu basé sur le jeu populaire Crossy Road, développé en C et C++ utilisant OpenGL et GLUT pour les graphismes 3D.',
+      src: 'https://github.com/ralodev/CrossyRoad',
+      url: ''
     },
     {
       id: 2,
@@ -75,8 +79,21 @@ export default {
       image: '',
       startDate: '2021',
       description:
-        'Le jeu classique DinoRun, développé avec les bibliothèques Swing et AWT et un outil graphique personnalisé qui met en œuvre l’algorithme de Bresenham pour le rendu.',
-      github: 'https://github.com/ralodev/'
+        "Le jeu classique DinoRun, cette application a été réalisée avec les bibliothèques Swing et AWT et intègre un outil graphique fait maison qui implémente l'algorithme de Bresenham pour le rendu.",
+      src: 'https://github.com/ralodev/DinoRun-2D',
+      url: ''
+    },
+
+    {
+      id: 3,
+      name: 'Encrypteur JavaScript',
+      startDate: '2024-01',
+      image: 'encriptador_cover.webp',
+      techstack: ['JavaScript', 'HTML5', 'Tailwind'],
+      description:
+        "Application web pour crypter et décrypter des messages texte en utilisant un dictionnaire prédéfini, créée pour le Challenge01 d'Oracle Next Education.",
+      src: 'https://github.com/ralodev/ONE-encriptador',
+      url: 'https://ralodev.github.io/ONE-encriptador/'
     }
   ]
 }

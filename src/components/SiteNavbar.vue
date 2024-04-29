@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-white text-xl z-10 text-zinc-800 uppercase shadow">
-    <div class="content flex justify-between items-center source w-full mx-auto py-4">
-      <router-link class="flex my-auto items-center open font-bold" to="/">
+  <div class="z-10 bg-white text-xl uppercase text-zinc-800 shadow">
+    <div class="content source mx-auto flex w-full items-center justify-between py-4">
+      <router-link class="open my-auto flex items-center font-bold" to="/">
         {{"<Ralodev />"}}
       </router-link>
       <div class="flex items-center space-x-2 font-semibold">
-        <nav class="hidden items-center md:flex space-x-2 [&>a]:px-1">
+        <nav class="hidden items-center space-x-2 md:flex [&>a]:px-1">
           <router-link class="hover:text-sky-800" to="/">{{ $t('hero.home') }}</router-link>
           <router-link class="hover:text-sky-800" to="/#experience">{{
             $t('experience.title')
@@ -28,9 +28,9 @@
         </button>
       </div>
     </div>
-    <div v-if="showMenu" class="items-center flex">
+    <div v-if="showMenu" class="flex items-center">
       <nav
-        class="z-10 bg-white relative flex w-full flex-col [&>a]:px-10 [&>a]:py-4 text-zinc-700 divide-y"
+        class="relative z-10 flex w-full flex-col divide-y bg-white text-zinc-700 [&>a]:px-10 [&>a]:py-4"
       >
         <router-link @click="showMenu = false" class="hover:text-sky-800" to="/">{{
           $t('hero.home')
@@ -53,7 +53,7 @@
   <div
     v-if="showMenu"
     @click="showMenu = false"
-    class="w-screen h-screen bg-black/50 absolute top-0 left-0 z-[-1]"
+    class="absolute left-0 top-0 z-[-1] h-screen w-screen bg-black/50"
   ></div>
 </template>
 

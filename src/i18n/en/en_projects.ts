@@ -29,6 +29,16 @@ export default {
     },
     {
       id: 2,
+      name: 'Vuefolio',
+      image: 'vuefolio_cover.webp',
+      techstack: ['JavaScript', 'HTML5', 'Tailwind'],
+      description:
+        'A portfolio template built with Vue.js, i18n, and TypeScript. It is highly customizable, easy to set up, and thoroughly optimized for performance, SEO, and accessibility.',
+      src: 'https://github.com/ralodev/vuefolio',
+      url: 'https://vuefolio.netlify.app/'
+    },
+    {
+      id: 3,
       name: 'FSM Generator',
       techstack: ['JavaScript', 'HTML5', 'CSS3'],
       image: 'fsm_cover.webp',
@@ -37,17 +47,6 @@ export default {
         'FSM Generator is a web application that allows you to generate finite state machines (FSM) / Deterministic Finite Automata (DFA) from regular expressions.',
       src: 'https://github.com/ralodev/FSM-Generator',
       url: 'https://fsm.ralo.dev/'
-    },
-    {
-      id: 3,
-      name: 'JavaScript Encryptor',
-      startDate: '2024-01',
-      image: 'encriptador_cover.webp',
-      techstack: ['JavaScript', 'HTML5', 'Tailwind'],
-      description:
-        'Web application for encrypting and decrypting text messages using a predefined dictionary, created for the Challenge01 of Oracle Next Education.',
-      src: 'https://github.com/ralodev/ONE-encriptador',
-      url: 'https://ralodev.github.io/ONE-encriptador/'
     }
   ],
   list_secondary: [
@@ -83,6 +82,18 @@ export default {
         'The classic DinoRun game, this application was made with the Swing and AWT libraries and incorporates a custom-made graphic tool that implements the Bresenham algorithm for rendering.',
       src: 'https://github.com/ralodev/DinoRun-2D',
       url: ''
+    },
+
+    {
+      id: 3,
+      name: 'JavaScript Encryptor',
+      startDate: '2024-01',
+      image: 'encriptador_cover.webp',
+      techstack: ['JavaScript', 'HTML5', 'Tailwind'],
+      description:
+        'Web application for encrypting and decrypting text messages using a predefined dictionary, created for the Challenge01 of Oracle Next Education.',
+      src: 'https://github.com/ralodev/ONE-encriptador',
+      url: 'https://ralodev.github.io/ONE-encriptador/'
     }
   ]
 }

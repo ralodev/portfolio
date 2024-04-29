@@ -6,22 +6,22 @@
       <!-- Info -->
       <div class="order-2 flex w-full flex-col justify-center px-6 md:w-1/2 md:px-2">
         <!-- Title -->
-        <h2 class="text-2xl open sm:text-4xl font-bold text-ltext1 text-slate-700">
+        <h2 class="open text-ltext1 text-2xl font-bold text-slate-700 sm:text-4xl">
           {{ name }}
         </h2>
         <hr />
         <!-- Tags -->
-        <div class="my-2 flex flex-wrap gap-2 font-medium source">
+        <div class="source my-2 flex flex-wrap gap-2 font-medium">
           <div
             v-for="tech in techstack"
             :key="tech.toLowerCase()"
-            class="relative flex flex-nowrap whitespace-nowrap rounded-md bg-gray-300 px-2 py-1 text-xs sm:text-sm font-normal"
+            class="relative flex flex-nowrap whitespace-nowrap rounded-md bg-gray-300 px-2 py-1 text-xs font-normal sm:text-sm"
           >
             {{ tech }}
           </div>
         </div>
         <!-- Description -->
-        <p class="pt-2 text-sm sm:text-base text-ltext2 open">
+        <p class="text-ltext2 open pt-2 text-sm sm:text-base">
           {{ description }}
         </p>
 
@@ -42,7 +42,7 @@
               padding="16"
             >
               <template #icon>
-                <GithubIcon class="w-6 h-6" />
+                <GithubIcon class="h-6 w-6" />
               </template>
               Source
             </GlassButton>
@@ -50,7 +50,7 @@
           <a v-if="url != ''" :href="url" target="_blank" rel="noreferrer noopener">
             <GlassButton v-if="url" :disabled="!url" padding="16" :title="`${props.name} website`">
               <template #icon>
-                <WebIcon class="w-6 h-6" />
+                <WebIcon class="h-6 w-6" />
               </template>
               Demo
             </GlassButton>
@@ -58,7 +58,7 @@
         </div>
       </div>
       <!-- Images -->
-      <div class="group px-6 md:w-1/2 md:px-0 max-w-[90vw] mx-auto">
+      <div class="group mx-auto max-w-[90vw] px-6 md:w-1/2 md:px-0">
         <div class="container">
           <div class="tilt-box-wrap">
             <span class="t_over"></span>
@@ -74,7 +74,7 @@
               <img
                 :src="getImageUrl()"
                 :alt="name + ' main image'"
-                class="object-cover object-center mx-auto max-h-[490px]"
+                class="mx-auto max-h-[490px] object-cover object-center"
               />
             </div>
           </div>

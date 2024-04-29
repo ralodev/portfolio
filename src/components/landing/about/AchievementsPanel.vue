@@ -22,13 +22,13 @@
     </template>
     <ul class="space-y-10">
       <li v-for="achievement in achievements" :key="achievement.id" class="mx-auto max-w-[80ch]">
-        <p class="experience__title text-xl source font-semibold tracking-wide text-gray-800">
+        <p class="experience__title source text-xl font-semibold tracking-wide text-gray-800">
           {{ $t(`about.achievements.list[${achievement.id}].title`) }}
         </p>
         <div
-          class="relative w-full before:absolute before:top-[5px] before:bottom-0 before:w-1 before:left-0 ps-5 before:bg-gray-300 transition-all duration-500 hover:bg-gray-100"
+          class="relative w-full ps-5 transition-all duration-500 before:absolute before:bottom-0 before:left-0 before:top-[5px] before:w-1 before:bg-gray-300 hover:bg-gray-100"
         >
-          <time class="float-end experience__time source text-gray-800 uppercase text-sm">
+          <time class="experience__time source float-end text-sm uppercase text-gray-800">
             {{ toFixedDate($t(`about.achievements.list[${achievement.id}].date`)) }}</time
           >
           <a

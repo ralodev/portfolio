@@ -2,7 +2,7 @@
   <section
     id="projects"
     name="projects"
-    class="flex relative justify-center w-full min-h-[100vh] items-center pt-10 pb-20"
+    class="relative flex min-h-[100vh] w-full items-center justify-center pb-20"
   >
     <div class="custom-shape-divider-top-1713495835">
       <svg
@@ -14,11 +14,11 @@
         <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
       </svg>
     </div>
-    <div name="experience-content" class="content z-[2] pt-[100px]">
+    <div name="experience-content" class="content z-[2] pt-[20px]">
       <h1 class="section__title">
         {{ $t('projects.title') }}
       </h1>
-      <ul class="pb-10 space-y-16 lg:space-y-4">
+      <ul class="space-y-16 pb-10 lg:space-y-4">
         <li v-for="project in projects" :key="project.id">
           <ProjectCard
             :name="$t(`projects.list[${project.id}].name`)"
@@ -31,7 +31,7 @@
           />
         </li>
       </ul>
-      <ul class="grid md:grid-cols-2 gap-10">
+      <ul class="grid gap-10 md:grid-cols-2">
         <li class="flex" v-for="project in other_projects" :key="project.name">
           <ProjectCardSmall
             :name="$t(`projects.list_secondary[${project.id}].name`)"

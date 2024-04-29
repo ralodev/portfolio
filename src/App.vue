@@ -4,7 +4,7 @@ import SiteNavbar from './components/SiteNavbar.vue'
 </script>
 
 <template>
-  <header class="fixed w-full z-50">
+  <header class="fixed z-50 w-full">
     <SiteNavbar />
   </header>
   <RouterView />

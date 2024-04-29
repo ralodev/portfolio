@@ -1,9 +1,9 @@
 <template>
-  <main class="w-full min-h-screen p-28 bg-gray-200">
-    <section class="w-full max-w-4xl mx-auto">
-      <article class="bg-white p-5 border-2 border-gray-300 rounded-2xl">
-        <h1 class="font-bold text-2xl open">GlassButton</h1>
-        <div name="sample" class="py-5 flex gap-x-3 items-center">
+  <main class="min-h-screen w-full bg-gray-200 p-28">
+    <section class="mx-auto w-full max-w-4xl">
+      <article class="rounded-2xl border-2 border-gray-300 bg-white p-5">
+        <h1 class="open text-2xl font-bold">GlassButton</h1>
+        <div name="sample" class="flex items-center gap-x-3 py-5">
           <GlassButton>Default</GlassButton>
           <GlassButton bg="bg-teal-700">Tailwind BG</GlassButton>
           <GlassButton padding="30">Custom padding</GlassButton>
@@ -22,7 +22,7 @@
           <GlassButton size="large">LARGE</GlassButton>
           <GlassButton><span class="text-pink-300">hello</span></GlassButton>
         </div>
-        <div class="code-container select-none p-3 my-5 border border-gray-300">
+        <div class="code-container my-5 select-none border border-gray-300 p-3">
           <code class="" id="button-use">
             <span class="comment">Default button</span>
             <span class="open-tag">GlassButton</span>
@@ -55,7 +55,7 @@
               <span class="classname">bg-yellow-700</span>
             </span>
             <br />
-            <span class="ps-3 open-tag"
+            <span class="open-tag ps-3"
               >template
               <span class="attrib-only">#id</span>
             </span>
@@ -71,7 +71,7 @@
               <span class="classname">bg-pink-700</span>
             </span>
             <br />
-            <span class="ps-3 open-tag"
+            <span class="open-tag ps-3"
               >template
               <span class="attrib-only">#icon</span>
             </span>
@@ -103,16 +103,16 @@
             <br />
           </code>
         </div>
-        <div class="relative group">
+        <div class="group relative">
           <textarea
             readonly
-            class="w-full h-60 max-h-96 bg-gray-100 select-all border border-gray-300 group-hover:bg-gray-200"
+            class="h-60 max-h-96 w-full select-all border border-gray-300 bg-gray-100 group-hover:bg-gray-200"
             id="button-code"
             v-model="code"
           >
           </textarea>
           <button
-            class="absolute bg-yellow-100 border border-gray-300 rounded-xl p-3 top-5 right-8 opacity-0 group-hover:opacity-100 duration-300"
+            class="absolute right-8 top-5 rounded-xl border border-gray-300 bg-yellow-100 p-3 opacity-0 duration-300 group-hover:opacity-100"
           >
             Copy
           </button>

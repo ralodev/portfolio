@@ -2,24 +2,24 @@
   <section
     id="about"
     name="about"
-    class="bg-[#ececec] py-10 flex justify-center w-full min-h-[80ch] items-center"
+    class="flex min-h-[80ch] w-full items-center justify-center bg-[#ececec] py-10"
   >
     <div class="content">
       <h1 class="section__title">
         {{ $t('about.title') }}
       </h1>
-      <div class="text-center inline-block mt-10 mb-10 sm:mt-0">
-        <div name="photo-frame" class="relative group inline-block md:block mb-8 md:mb-0">
+      <div class="mb-10 mt-10 inline-block text-center sm:mt-0">
+        <div name="photo-frame" class="group relative mb-8 inline-block md:mb-0 md:block">
           <img
             src="@/assets/img/profile.webp"
-            class="float-left h-56 w-56 z-[1] relative rotate-6 mx-8 mb-2 border-gray-400 rounded-lg md:group-hover:rotate-0 duration-300"
+            class="relative z-[1] float-left mx-8 mb-2 h-56 w-56 rotate-6 rounded-lg border-gray-400 duration-300 md:group-hover:rotate-0"
             alt=""
           />
           <div
-            class="absolute h-[244px] w-[244px] translate-y-[-10px] translate-x-[22px] bg-white rotate-6 shadow-xl rounded-lg md:group-hover:rotate-0 duration-300"
+            class="absolute h-[244px] w-[244px] translate-x-[22px] translate-y-[-10px] rotate-6 rounded-lg bg-white shadow-xl duration-300 md:group-hover:rotate-0"
           ></div>
         </div>
-        <p class="text-base sm:text-lg open text-start">
+        <p class="open text-start text-base sm:text-lg">
           {{ $t('about.summary') }}
         </p>
       </div>

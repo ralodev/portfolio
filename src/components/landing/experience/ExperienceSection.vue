@@ -4,12 +4,12 @@
       <h1 class="section__title">
         {{ $t('experience.title') }}
       </h1>
-      <div class="relative grid gap-4 sm:grid-cols-12 content">
+      <div class="content relative grid gap-4 sm:grid-cols-12">
         <div class="col-span-12 sm:col-span-3">
           <div
-            class="text-center sm:text-left sm:before:block before:w-full before:mx-auto before:h-4 before:mt-[5px] before:mb-5 before:rounded-lg before:hidden sm:before:mx-0 before:bg-gradient-to-l before:from-sky-900 before: sm:sticky top-24"
+            class="before: top-24 text-center before:mx-auto before:mb-5 before:mt-[5px] before:hidden before:h-4 before:w-full before:rounded-lg before:bg-gradient-to-l before:from-sky-900 sm:sticky sm:text-left sm:before:mx-0 sm:before:block"
           >
-            <span class="text-base inline-block pb-2 text-balance sm:text-wrap">
+            <span class="inline-block text-balance pb-2 text-base sm:text-wrap">
               {{ $t('experience.description') }}
             </span>
             <a href="/CV-Raúl_López.pdf" title="Download resume" target="_blank">
@@ -19,9 +19,9 @@
             </a>
           </div>
         </div>
-        <div class="relative col-span-12 ps-4 space-y-6 sm:col-span-9">
+        <div class="relative col-span-12 space-y-6 ps-4 sm:col-span-9">
           <ul
-            class="col-span-12 relative ps-4 sm:col-span-8 before:absolute before:top-[5px] before:bottom-0 before:w-0.5 before:-left-3 before:bg-gray-300"
+            class="relative col-span-12 ps-4 before:absolute before:-left-3 before:bottom-0 before:top-[5px] before:w-0.5 before:bg-gray-300 sm:col-span-8"
           >
             <ExperienceElement
               v-for="job in experience"

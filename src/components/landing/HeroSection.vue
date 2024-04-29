@@ -1,26 +1,26 @@
 <template>
-  <section class="flex home-hero w-full items-center justify-center">
-    <div class="text-center space-y-8 content">
+  <section class="home-hero flex w-full items-center justify-center">
+    <div class="content space-y-8 text-center">
       <h1
-        class="font-black tracking-wide text-4xl sm:text-5xl md:text-6xl uppercase text-balance source"
+        class="source text-balance text-4xl font-black uppercase tracking-wide sm:text-5xl md:text-6xl"
       >
         {{ $t('hero.title') }}
       </h1>
-      <p class="text-base sm:text-lg md:text-xl open max-w-[80ch] text-pretty">
+      <p class="open max-w-[80ch] text-pretty text-base sm:text-lg md:text-xl">
         {{ $t('hero.subtitle') }}
       </p>
-      <div class="flex gap-x-3 justify-center">
+      <div class="flex justify-center gap-x-3">
         <a href="https://linkedin.com/in/raul-lc" target="_blank" rel="noopener">
           <GlassButton bg="bg-sky-700" title="LinkedIn profile">
             <template #icon>
-              <LinkedinIcon class="w-8 h-8" />
+              <LinkedinIcon class="h-8 w-8" />
             </template>
           </GlassButton>
         </a>
         <a href="https://github.com/ralodev" target="_blank" rel="noopener">
           <GlassButton bg="bg-neutral-700" title="GitHub profile">
             <template #icon>
-              <GithubIcon class="w-8 h-8" />
+              <GithubIcon class="h-8 w-8" />
             </template>
           </GlassButton>
         </a>

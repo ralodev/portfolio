@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full pt-24 px-5">TODO</section>
+  <section class="w-full px-5 pt-24">TODO</section>
 </template>
 
 <script lang="ts" setup></script>

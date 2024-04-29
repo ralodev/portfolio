@@ -2,7 +2,7 @@
   <section
     id="contact"
     name="contact"
-    class="bg-[#fff] py-10 flex justify-center w-full min-h-[100ch] items-center relative"
+    class="relative flex min-h-[100ch] w-full items-center justify-center bg-[#fff] pb-10"
   >
     <div class="custom-shape-divider-top-1713669013">
       <svg
@@ -32,12 +32,12 @@
         {{ $t('contact.title') }}
       </h1>
       <div class="flex w-full flex-col gap-y-5">
-        <p class="text-center sm:text-lg source">
+        <p class="source text-center sm:text-lg">
           {{ $t('contact.description') }}
         </p>
         <span class="h-1 w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
         <span class="text-center">
-          <p class="text-center sm:text-lg source">
+          <p class="source text-center sm:text-lg">
             {{ $t('contact.social') }}
           </p>
           <div class="flex w-full flex-wrap items-center justify-center gap-5 pt-3">
@@ -45,7 +45,7 @@
             <div class="flex items-center">
               <input
                 type="email"
-                class="pointer-events-none min-h-[45px] w-[200px] select-all rounded-s-md border-[1px] px-3 bg-gray-50"
+                class="pointer-events-none min-h-[45px] w-[200px] select-all rounded-s-md border-[1px] bg-gray-50 px-3"
                 id="Email"
                 name="Email"
                 :placeholder="$t('contact.email')"
@@ -64,11 +64,11 @@
                     : 'cursor-pointer bg-sky-800 hover:bg-sky-900 '
                 "
               >
-                <span v-if="!copied" class="flex gap-x-1 text-sm sm:text-base source items-center">
-                  <CopyIcon class="w-4 h-4" />
+                <span v-if="!copied" class="source flex items-center gap-x-1 text-sm sm:text-base">
+                  <CopyIcon class="h-4 w-4" />
                   {{ $t('contact.copy') }}
                 </span>
-                <span v-else class="contact@ralo.dev flex gap-x-1 text-base source items-center">
+                <span v-else class="contact@ralo.dev source flex items-center gap-x-1 text-base">
                   <svg
                     class="my-auto h-4 w-4 text-white"
                     aria-hidden="true"
@@ -86,19 +86,19 @@
             </div>
             <a href="https://github.com/ralodev" target="_blank">
               <GlassButton bg="bg-neutral-800" title="GitHub" type="icon">
-                <GithubIcon class="w-8 h-8" />
+                <GithubIcon class="h-8 w-8" />
               </GlassButton>
             </a>
             <a href="https://www.linkedin.com/in/raul-lc/" target="_blank">
               <GlassButton bg="bg-[#0e72a3]" title="LinkedIn" type="icon">
-                <LinkedinIcon class="w-8 h-8" />
+                <LinkedinIcon class="h-8 w-8" />
               </GlassButton>
             </a>
           </div>
         </span>
         <span class="h-1 w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
-        <div class="flex w-full flex-col text-center justify-center">
-          <p class="text-center sm:text-lg source">
+        <div class="flex w-full flex-col justify-center text-center">
+          <p class="source text-center sm:text-lg">
             {{ $t('contact.form') }}
           </p>
           <ContactForm />
@@ -114,10 +114,9 @@ import CopyIcon from '@/components/icons/CopyIcon.vue'
 import GithubIcon from '@/components/icons/GithubIcon.vue'
 import LinkedinIcon from '@/components/icons/LinkedinIcon.vue'
 import ContactForm from './ContactForm.vue'
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 
 const email = 'contact@ralo.dev'
-const gotcha = ref('')
 const copied = ref(false)
 
 function copyEmail() {

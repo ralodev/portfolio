@@ -1,20 +1,20 @@
 <template>
   <li
-    class="relative before:absolute before:top-[6px] before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-sky-900 before: pb-8"
+    class="before: relative pb-8 before:absolute before:left-[-35px] before:top-[6px] before:z-[1] before:h-4 before:w-4 before:rounded-full before:bg-sky-900"
   >
     <article>
-      <h1 class="text-xl font-bold text-sky-900 open">
+      <h1 class="open text-xl font-bold text-sky-900">
         {{ props.title }}
       </h1>
-      <time class="text-sm sm:text-sm font-mono font-semibold text-gray-700">
+      <time class="font-mono text-sm font-semibold text-gray-700 sm:text-sm">
         {{ props.start }} - {{ props.end }} ({{ totalTime() }} {{ $t('experience.months') }})
       </time>
       <span class="block">
         <component
           :is="props.url == '#' ? 'h2' : 'a'"
           :href="props.url"
-          class="text-base sm:text-lg font-semibold source items-center gap-x-1 inline-flex"
-          :class="props.url == '#' ? 'cursor-default' : 'cursor-pointer hover: hover:text-sky-700'"
+          class="source inline-flex items-center gap-x-1 text-base font-semibold sm:text-lg"
+          :class="props.url == '#' ? 'cursor-default' : 'hover: cursor-pointer hover:text-sky-700'"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -34,11 +34,11 @@
           </svg>
         </component>
       </span>
-      <div class="text-sm sm:text-base pt-1 open">
+      <div class="open pt-1 text-sm sm:text-base">
         <p>
           {{ props.description }}
         </p>
-        <ul v-if="props.highlights[0] != ''" class="list-disc list-inside">
+        <ul v-if="props.highlights[0] != ''" class="list-inside list-disc">
           <li v-for="highlight in props.highlights" :key="highlight.toString()">
             {{ highlight }}
           </li>

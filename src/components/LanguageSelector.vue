@@ -1,22 +1,22 @@
 <template>
-  <form class="max-w-sm mx-auto">
+  <form class="mx-auto max-w-sm">
     <div
       v-if="langDropdown"
-      class="w-screen h-screen absolute top-0 left-0"
+      class="absolute left-0 top-0 h-screen w-screen"
       @click="langDropdown = false"
     ></div>
-    <div class="flex relative">
+    <div class="relative flex">
       <button
         id="states-button"
         @click="langDropdown = !langDropdown"
-        class="dropdown-toggle flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-700 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-100 gap-x-2 uppercase"
+        class="dropdown-toggle z-10 inline-flex flex-shrink-0 items-center gap-x-2 rounded-lg border border-gray-200 bg-gray-50 px-4 py-2.5 text-center text-sm font-medium uppercase text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100"
         type="button"
       >
         <!-- Selected Flag -->
         <component :is="selectedLanguageFlag" />
         {{ selectedLanguage }}
         <svg
-          class="w-2.5 h-2.5"
+          class="h-2.5 w-2.5"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -34,13 +34,13 @@
       <div
         v-if="langDropdown"
         id="dropdown-states"
-        class="z-10 top-10 absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
+        class="absolute top-10 z-10 w-44 divide-y divide-gray-100 rounded-lg bg-white shadow"
       >
         <ul class="py-2 text-sm text-gray-700" aria-labelledby="states-button">
           <li v-for="option in languageOptions" :key="option.language">
             <button
               type="button"
-              class="flex items-center gap-2 w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              class="flex w-full items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               @click="changeLanguage(option)"
             >
               <Component :is="option.flagIcon" /> {{ option.language }}

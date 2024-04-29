@@ -19,20 +19,20 @@
     <!-- Education -->
     <ul class="space-y-5">
       <li v-for="edu in educationPrograms" :key="edu.id" class="flex flex-col">
-        <p class="experience__title text-xl source font-semibold tracking-wide text-gray-800">
+        <p class="experience__title source text-xl font-semibold tracking-wide text-gray-800">
           {{ $t(`about.education.list[${edu.id}].title`) }}
         </p>
-        <time class="experience__time source text-gray-800 uppercase text-sm">
+        <time class="experience__time source text-sm uppercase text-gray-800">
           {{ toFixedDate($t(`about.education.list[${edu.id}].startDate`)) }} -
           {{ toFixedDate($t(`about.education.list[${edu.id}].endDate`)) }}</time
         >
 
-        <p class="experience__company font-semibold open text-gray-700">
+        <p class="experience__company open font-semibold text-gray-700">
           @ {{ $t(`about.education.list[${edu.id}].institution`) }}
         </p>
-        <div class="w-full -mx-2">
+        <div class="-mx-2 w-full">
           <span
-            class="rounded-md source bg-gray-300 uppercase text-gray-800 text-xs py-1 px-3 min-w-1 inline-block mx-2"
+            class="source mx-2 inline-block min-w-1 rounded-md bg-gray-300 px-3 py-1 text-xs uppercase text-gray-800"
             v-for="course in edu.courses"
             :key="course"
             >{{ course }}</span
