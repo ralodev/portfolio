@@ -1,46 +1,48 @@
-export default {
+import type { Experience } from '@/types'
+
+const experience: Experience = {
   title: 'Expérience',
   description: 'Vous pouvez télécharger mon CV en cliquant sur le bouton ci-dessous.',
-  download_button: 'Télécharger le CV',
-  present: 'Actuel',
-  months: 'mois',
+  download_button: 'Télécharger',
+  present: 'Actuellement',
+  month: 'mois | mois',
+  year: 'an | années',
   list: [
     {
-      id: '0',
-      name: 'ralo.dev',
-      position: 'Ingénieur Logiciel Freelance',
+      company: 'ralo.dev',
+      position: 'Ingénieur logiciel freelance',
       url: 'https://ralo.dev/',
       startDate: '2023-07',
-      endDate: 'Actuel',
-      highlights: '',
-      summary:
-        'J’offre des services en ingénierie logicielle, couvrant un éventail de services incluant le développement de logiciels, le développement web, et la consultance. J’ai travaillé avec des clients de divers secteurs, incluant l’éducation, le tourisme, et la technologie.',
-      skills: ['Développement de Logiciels', 'Gestion de Projets', 'Formation']
+      endDate: 'Actuellement',
+      highlights: [],
+      description:
+        "Offrant une expertise en génie logiciel, je propose une gamme de services comprenant le développement logiciel, le développement web et le conseil. J'ai travaillé avec des clients de différents secteurs, notamment l'éducation, le tourisme et la technologie."
     },
     {
-      id: '1',
-      name: 'Institut Technologique de Oaxaca',
+      company: "Institut Technologique d'Oaxaca",
       position: 'Développeur Full Stack Junior',
       url: 'http://www.itoaxaca.edu.mx/',
       startDate: '2024-01',
       endDate: '2024-04',
-      highlights: '',
-      summary:
-        'Mes responsabilités comprenaient le développement d’une application web pour la gestion des inscriptions d’étudiants, en utilisant une pile de technologies comprenant Nextjs, React, TypeScript, Tailwind, Nestjs, PrismaORM, et PostgreSQL.',
-      skills: ['Développement Full Stack', 'Nextjs', 'Nestjs']
+      highlights: [],
+      description:
+        "Mes responsabilités comprenaient le développement d'une application web pour la gestion des dossiers étudiants, en utilisant une pile technologique comprenant Nextjs, React, TypeScript, Tailwind, Nestjs, PrismaORM et PostgreSQL."
     },
     {
-      id: '2',
-      name: 'Institut Technologique de Oaxaca',
-      position: 'Stagiaire Développeur Full Stack',
+      company: "Institut Technologique d'Oaxaca",
+      position: 'Développeur Full Stack Stagiaire',
       url: 'http://www.itoaxaca.edu.mx/',
       startDate: '2022-05',
       endDate: '2023-08',
-      summary:
-        'J’étais responsable du développement d’un Système de Gestion des Ressources Humaines utilisant Vuejs, JavaScript, TailwindCSS, Java, Spring (Boot, MVC, Security) et MySQL.',
-      highlights:
-        'J’ai optimisé les temps de génération de rapports de 90%; Le HRMS que j’ai mis en place est actuellement en production; Démo de l’application : https://sgip.ralo.dev/',
-      skills: ['Développement Full Stack', 'Vuejs', 'Spring Boot']
+      description:
+        "J'étais responsable du développement d'un système de gestion des ressources humaines en utilisant Vuejs, JavaScript, TailwindCSS, Java, Spring (Boot, MVC, Security) et MySQL.",
+      highlights: [
+        'Optimisation des temps de génération des rapports de 90%',
+        'Déploiement et maintenance réussies du SIRH actuellement en production',
+        "Démo de l'application : https://sgip.ralo.dev/"
+      ]
     }
   ]
 }
+
+export default experience

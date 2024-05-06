@@ -1,47 +1,32 @@
 <template>
   <button
     :disabled="props.disabled"
-    class="glass-button source"
+    class="glass-button source-sans"
     :class="getButtonSize"
     :title="props.title"
   >
-    <span
-      class="glass-button__content text-white"
-      :class="getButtonSpacing"
-      :style="`padding-inline: ${props.padding}px !important`"
-    >
-      <span v-if="!!slots['icon']" class="flex [&>svg]:my-auto [&>svg]:inline">
-        <slot name="icon" />
-      </span>
-      <span v-if="!!slots['default']" class="m-auto">
-        <slot name="default" />
-      </span>
+    <span class="glass-button__content flex text-white">
+      <slot />
     </span>
     <span class="glass-button__bg" :class="bgClass + (props.disabled ? ' opacity-50' : '')"></span>
   </button>
 </template>
 
 <script lang="ts" setup>
-import { useSlots, computed } from 'vue'
-const slots = useSlots()
+import { computed } from 'vue'
 const button_sizes: Record<string, string> = {
-  small: ' h-[35px] min-w-[35px] text-sm',
+  small: ' h-[42px] min-w-[35px] text-sm',
   normal: ' h-[50px] min-w-[35px] text-lg',
   large: ' h-[65px] min-w-[35px] text-2xl font-semibold'
-}
-const button_spacing: Record<string, string> = {
-  small: ' px-2 gap-x-2',
-  normal: ' px-2 gap-x-2',
-  large: ' px-5 gap-x-3'
 }
 const props = defineProps({
   bg: {
     type: String,
-    default: 'bg-sky-800'
+    default: 'bg-primary-700'
   },
   title: {
     type: String,
-    default: ''
+    default: 'button'
   },
   disabled: {
     type: Boolean,
@@ -51,21 +36,12 @@ const props = defineProps({
     type: String,
     default: 'normal',
     required: false
-  },
-  padding: {
-    type: String,
-    default: '8'
   }
 })
 
 const getButtonSize = computed(() => {
   const isValidSize = Object.keys(button_sizes).includes(props.size)
   const newClass = isValidSize ? button_sizes[props.size] : button_sizes['normal']
-  return newClass
-})
-const getButtonSpacing = computed(() => {
-  const isValidSpacing = Object.keys(button_spacing).includes(props.size)
-  const newClass = isValidSpacing ? button_spacing[props.size] : button_spacing['normal']
   return newClass
 })
 const bgClass = computed(() => {
@@ -81,7 +57,6 @@ const bgClass = computed(() => {
   border: none;
   background-color: transparent;
   position: relative;
-  /* overflow: hidden; */
   border-radius: 6px;
   z-index: 1;
   transition: all 0.3s;

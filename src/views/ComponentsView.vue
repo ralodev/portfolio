@@ -8,12 +8,12 @@
           <GlassButton bg="bg-teal-700">Tailwind BG</GlassButton>
           <GlassButton padding="30">Custom padding</GlassButton>
           <GlassButton bg="bg-yellow-700">
-            <template #icon>
+            <template>
               <SmileIcon />
             </template>
           </GlassButton>
           <GlassButton bg="bg-pink-700">
-            <template #icon>
+            <template>
               <SmileIcon class="w-6" />
             </template>
             Text
@@ -73,7 +73,7 @@
             <br />
             <span class="open-tag ps-3"
               >template
-              <span class="attrib-only">#icon</span>
+              <span class="attrib-only"></span>
             </span>
             &lt;svg ... &gt;
             <span class="close-tag">template</span>

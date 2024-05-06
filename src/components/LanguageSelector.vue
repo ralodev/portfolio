@@ -9,27 +9,12 @@
       <button
         id="states-button"
         @click="langDropdown = !langDropdown"
-        class="dropdown-toggle z-10 inline-flex flex-shrink-0 items-center gap-x-2 rounded-lg border border-gray-200 bg-gray-50 px-4 py-2.5 text-center text-sm font-medium uppercase text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100"
+        class="dropdown-toggle z-10 inline-flex flex-shrink-0 items-center gap-x-2 rounded-lg border border-gray-200 bg-gray-50/50 px-4 py-2.5 text-center text-sm font-semibold uppercase text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100"
         type="button"
       >
-        <!-- Selected Flag -->
         <component :is="selectedLanguageFlag" />
         {{ selectedLanguage }}
-        <svg
-          class="h-2.5 w-2.5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 10 6"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="m1 1 4 4 4-4"
-          />
-        </svg>
+        <ChevronIcon />
       </button>
       <div
         v-if="langDropdown"
@@ -57,18 +42,19 @@ import { ref, shallowRef } from 'vue'
 import { useI18n } from 'vue-i18n'
 import EnglishIcon from './icons/EnglishIcon.vue'
 import SpanishIcon from './icons/SpanishIcon.vue'
+import ChevronIcon from './icons/ChevronIcon.vue'
 import FrenchIcon from './icons/FrenchIcon.vue'
-import JapaneseIcon from './icons/JapaneseIcon.vue'
+import KoreanIcon from './icons/KoreanIcon.vue'
 
 const langDropdown = ref(false)
 const selectedLanguageFlag = shallowRef(EnglishIcon)
-const selectedLanguage = ref('EN')
-const locale = useI18n()
+const selectedLanguage = ref('en')
+const { locale } = useI18n()
 const languageOptions = [
   { language: 'English', flagIcon: EnglishIcon, code: 'en' },
   { language: 'Español', flagIcon: SpanishIcon, code: 'es' },
   { language: 'Français', flagIcon: FrenchIcon, code: 'fr' },
-  { language: 'Japanese', flagIcon: JapaneseIcon, code: 'jp' }
+  { language: 'Korean', flagIcon: KoreanIcon, code: 'ko' }
 ]
 interface OptionObject {
   language: string
@@ -78,7 +64,7 @@ interface OptionObject {
 const changeLanguage = (option: OptionObject) => {
   selectedLanguage.value = option.code
   selectedLanguageFlag.value = option.flagIcon
-  locale.locale.value = option.code.toLocaleLowerCase()
+  locale.value = option.code
   langDropdown.value = false
 }
 </script>

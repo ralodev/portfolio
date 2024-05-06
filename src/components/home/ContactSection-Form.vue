@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import GlassButton from '@/components/GlassButton.vue'
+// Get your key for free in: https://web3forms.com/
 const WEB3FORMS_ACCESS_KEY = 'a492c371-8aa4-42fc-9f22-453715749f65'
 const name = ref('')
 const email = ref('')
@@ -18,16 +19,12 @@ const checkMessageAvailable = () => {
   if (lastMessage) {
     let lastMessageTime = new Date(lastMessage)
     let currentTime = new Date()
-    // Calculamos la diferencia en milisegundos
     let difference = currentTime.getTime() - lastMessageTime.getTime()
-    // Convertimos la diferencia a minutos
     let differenceInMinutes = difference / 60000
     if (differenceInMinutes < 30) {
-      // Convertir la diferencia de nuevo a minutos y segundos para la salida
       let minutes = 30 - Math.floor(differenceInMinutes)
       let seconds = 59 - Math.floor((difference % (1000 * 60)) / 1000)
       cooldownTimeLeft.value = `${minutes}:${seconds.toString().padStart(2, '0')}`
-      // Check again in 1 sec
       setTimeout(() => {
         checkMessageAvailable()
       }, 1000)
@@ -70,7 +67,7 @@ const submitForm = async () => {
 <template>
   <form
     @submit.prevent="submitForm"
-    class="open flex w-full max-w-[600px] flex-col gap-y-5 self-center pt-3 text-start"
+    class="open-sans flex w-full max-w-[600px] flex-col gap-y-5 self-center pt-3 text-start"
   >
     <label class="block" for="name">
       {{ $t('contact.name_label') }}
@@ -80,7 +77,7 @@ const submitForm = async () => {
         v-model="name"
         autocomplete="name"
         :placeholder="$t('contact.name_placeholder')"
-        class="block min-h-[45px] w-full select-all rounded-md rounded-s-md border-[1px] border-neutral-400 bg-white px-3 outline-0 focus:outline-1 focus:outline-sky-700"
+        class="focus:outline-primary-700 block min-h-[45px] w-full select-all rounded-md rounded-s-md border-[1px] border-neutral-400 bg-white px-3 outline-0 focus:outline-1"
         required
       />
     </label>
@@ -92,7 +89,7 @@ const submitForm = async () => {
         v-model="email"
         autocomplete="email"
         :placeholder="$t('contact.email_placeholder')"
-        class="block min-h-[45px] w-full select-all rounded-md rounded-s-md border-[1px] border-neutral-400 bg-white px-3 outline-0 focus:outline-1 focus:outline-sky-700"
+        class="focus:outline-primary-700 block min-h-[45px] w-full select-all rounded-md rounded-s-md border-[1px] border-neutral-400 bg-white px-3 outline-0 focus:outline-1"
         required
       />
     </label>
@@ -101,13 +98,13 @@ const submitForm = async () => {
       <textarea
         name="message"
         v-model="message"
-        class="block min-h-[45px] w-full select-all rounded-md rounded-s-md border-[1px] border-neutral-400 bg-white px-3 py-2 outline-0 focus:outline-1 focus:outline-sky-700"
+        class="focus:outline-primary-700 block min-h-[45px] w-full select-all rounded-md rounded-s-md border-[1px] border-neutral-400 bg-white px-3 py-2 outline-0 focus:outline-1"
         :placeholder="$t('contact.message_placeholder')"
         required
       ></textarea>
     </label>
 
-    <span v-if="!isMessageAvailable" class="source text-center text-sm text-red-600">
+    <span v-if="!isMessageAvailable" class="source-sans text-center text-sm text-red-600">
       {{ $t('contact.restriction') }}
     </span>
 

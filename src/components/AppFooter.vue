@@ -1,7 +1,9 @@
 <template>
-  <footer class="divide-y bg-neutral-800 px-4 text-gray-100">
+  <footer
+    class="from-base-800 divide-y bg-gradient-to-t from-95% to-transparent px-4 text-gray-100"
+  >
     <div
-      class="mx-auto flex max-w-5xl flex-col justify-between space-y-8 py-10 lg:flex-row lg:space-y-0"
+      class="content mx-auto flex flex-col justify-between space-y-8 py-5 pt-16 lg:flex-row lg:space-y-0"
     >
       <div class="lg:w-1/3">
         <div class="flex items-center space-x-2">
@@ -91,11 +93,6 @@
                 >Components</a
               >
             </li>
-            <li>
-              <RouterLink class="hover:text-blue-300 hover:underline" to="/credits"
-                >Credits</RouterLink
-              >
-            </li>
           </ul>
         </div>
         <div class="space-y-3">
@@ -177,6 +174,7 @@
 </template>
 
 <script setup lang="ts">
-import GithubIcon from './icons/GithubIcon.vue'
+import { RouterLink } from 'vue-router'
 import LinkedinIcon from './icons/LinkedinIcon.vue'
+import GithubIcon from './icons/GithubIcon.vue'
 </script>

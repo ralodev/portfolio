@@ -13,11 +13,11 @@ import fr_experience from './fr/fr_experience'
 import fr_projects from './fr/fr_projects'
 import fr_about from './fr/fr_about'
 import fr_contact from './fr/fr_contact'
-import jp_hero from './jp/jp_hero'
-import jp_experience from './jp/jp_experience'
-import jp_projects from './jp/jp_projects'
-import jp_about from './jp/jp_about'
-import jp_contact from './jp/jp_contact'
+import kr_hero from './kr/kr_hero'
+import kr_experience from './kr/kr_experience'
+import kr_projects from './kr/kr_projects'
+import kr_about from './kr/kr_about'
+import kr_contact from './kr/kr_contact'
 export default {
   en: {
     hero: en_hero,
@@ -40,11 +40,11 @@ export default {
     about: fr_about,
     contact: fr_contact
   },
-  jp: {
-    hero: jp_hero,
-    experience: jp_experience,
-    projects: jp_projects,
-    about: jp_about,
-    contact: jp_contact
+  ko: {
+    hero: kr_hero,
+    experience: kr_experience,
+    projects: kr_projects,
+    about: kr_about,
+    contact: kr_contact
   }
 }

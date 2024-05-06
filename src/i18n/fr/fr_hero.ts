@@ -1,20 +1,20 @@
-export default {
-  title: 'Bonjour, je suis Raúl López Cruz',
+import type { Hero } from '@/types'
+
+const hero: Hero = {
+  title: 'Hé, je suis Raúl López Cruz',
   subtitle:
-    'Développeur Full Stack expérimenté dédié à simplifier les processus et améliorer l’expérience utilisateur à travers des solutions innovantes.',
+    "Développeur Full Stack expérimenté, dédié à la simplification des processus et à l'amélioration de l'expérience utilisateur grâce à des solutions innovantes.",
   name: 'Raúl López Cruz',
-  email: 'contact@ralo.dev',
-  url: 'https://ralo.dev/',
   contact_button: 'Contactez-moi',
-  profiles: [
-    {
-      network: 'LinkedIn',
-      url: 'https://linkedin.com/in/raul-lc/'
-    },
-    {
-      network: 'GitHub',
-      url: 'https://github.com/ralodev'
-    }
-  ],
+  profiles: {
+    linkedin: 'https://linkedin.com/in/raul-lc/',
+    github: 'https://github.com/ralodev',
+    youtube: '',
+    twitter: '',
+    instagram: '',
+    facebook: ''
+  },
   home: 'Accueil'
 }
+
+export default hero
